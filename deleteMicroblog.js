@@ -5,15 +5,14 @@ var Event = function(element,event){
 }
 function del(){
 	var menu = document.getElementsByClassName("screen_box")[0];
-	Event(menu.children[0],"click");
 	var delList = document.getElementsByClassName("layer_menu_list");
 	var list = delList[1].children;
 	var btn = list[0].children[0].children[0];
-	Event(btn,"click")
 	var e = document.getElementsByClassName("screen_box")[0].children[2].children[0].children[2].children[0];
+	Event(menu.children[0],"click");
+	Event(btn,"click")
 	Event(e,"click");
 }
-
 setInterval(function(){
 	del();
 }
